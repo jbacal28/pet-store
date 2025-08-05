@@ -21,7 +21,7 @@ import lombok.ToString;
 public class PetStore {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long petStoreId;
+  private Long petStoreId;
   
   private String PetStoreName;
   private String PetStoreAddress;
