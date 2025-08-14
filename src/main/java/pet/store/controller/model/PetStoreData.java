@@ -34,8 +34,7 @@ public class PetStoreData {
     
     
     for (Customer customer : petStore.getCustomers()) {
-      PetStoreCustomer petStoreCustomer = new PetStoreCustomer(customer);
-      customers.add(petStoreCustomer);
+      customers.add(new PetStoreCustomer(customer));
     }
     
     for (Employee employee : petStore.getEmployees()) {
@@ -65,7 +64,7 @@ public class PetStoreData {
   
   @Data
   @NoArgsConstructor
-  static class PetStoreCustomer {
+  public static class PetStoreCustomer {
     private Long customerId;
     private String customerFirstName;
     private String customerLastName;
